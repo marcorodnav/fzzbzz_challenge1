@@ -10,9 +10,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import awesome.challenge.definition.FizzBuzzable;
@@ -116,7 +114,7 @@ public class FizzBuzzImplTest {
     	fizzy = null;
     }
     
-    private static Supplier<int[]>  hugeArrSupp = () -> {
+    private static Supplier<int[]> hugeArrSupp = () -> {
 		Integer[] integers = new Integer[2000000];
 		IntStream.range(-1000000, 1000000).boxed().collect(Collectors.toList()).toArray(integers);
 		return Arrays.stream(integers).mapToInt(Integer::intValue).toArray();

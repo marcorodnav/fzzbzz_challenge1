@@ -8,9 +8,4 @@ public class FizzBuzzImpl implements FizzBuzzable{
 		// Make uncle bob proud...
 		return null;
 	}
-	
-	public String working() {
-		return "working";
-	}
-
 }

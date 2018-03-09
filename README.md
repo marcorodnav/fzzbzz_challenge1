@@ -13,9 +13,15 @@ sequence, there are some conditions:
 The challenge is to come up with a method that receives as an argument an N-size array of integers (posibly unordered) and then it
 should return a string of characters withe the corresponding FizzBuzz sequence (according to the rules described previously).
 
+### Input rules
+An an array of ints, with any integer (positive or negative) number, including **ZERO**
+
 Sample input:
 
 **[-1,2,-3,15,6]**
+
+### Output rules
+A string with the values corresponding to the rules, separated by a comma and a blank space
 
 Corresponding output:
 **"Fizz, -1, 2, Fizz, FizzBuzz"**
